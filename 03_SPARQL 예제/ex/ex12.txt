@@ -1,0 +1,13 @@
+SELECT ?s (group_concat(distinct ?mTitle) as ?title)  
+(group_concat(distinct ?l; separator=" | ") as ?agentRole) 
+WHERE {
+	?s a bf:Work .
+	?s bf:title ?tit.
+	?tit bf:mainTitle ?mTitle.
+	?s bf:contribution ?con.
+	?con bf:agent ?agnt.
+	?agnt rdfs:label ?aLabel.
+	?con bf:role ?rol.
+	?rol rdfs:label ?rLabel.
+	bind((?aLabel + "("+?rLabel + ")") as ?l)
+} group by ?s

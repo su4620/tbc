@@ -1,0 +1,6 @@
+SELECT (count(?item) as ?cnt)
+WHERE {
+	?s a bf:Work .
+	?s bf:hasInstance ?instance .
+	?instance bf:hasItem ?item .
+}

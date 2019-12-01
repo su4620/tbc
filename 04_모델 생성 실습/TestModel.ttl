@@ -1,0 +1,82 @@
+# Saved by TopBraid on Thu Nov 28 17:56:41 KST 2019
+# baseURI: http://joyhong.tistory.com/example/
+
+@prefix :        <http://joyhong.tistory.com/example/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+:     rdf:type owl:Ontology ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+:City
+      rdf:type owl:Class ;
+      rdfs:label "도시"^^xsd:string ;
+      rdfs:subClassOf owl:Thing .
+
+:Course
+      rdf:type owl:Class ;
+      rdfs:label "수업"^^xsd:string ;
+      rdfs:subClassOf owl:Thing .
+
+:Person
+      rdf:type owl:Class ;
+      rdfs:label "사람"^^xsd:string ;
+      rdfs:subClassOf owl:Thing .
+
+:Professor
+      rdf:type owl:Class ;
+      rdfs:label "교수"^^xsd:string ;
+      rdfs:subClassOf :Person .
+
+:Student
+      rdf:type owl:Class ;
+      rdfs:label "학생"^^xsd:string ;
+      rdfs:subClassOf :Person .
+
+:birthYear
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Person ;
+      rdfs:label "출생연도"^^xsd:string ;
+      rdfs:range xsd:integer .
+
+:credit
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Course ;
+      rdfs:label "학점"^^xsd:string ;
+      rdfs:range xsd:integer .
+
+:hobby
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Person ;
+      rdfs:label "취미"^^xsd:string ;
+      rdfs:range xsd:string .
+
+:liveIn
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :Person ;
+      rdfs:label "사는 곳"^^xsd:string ;
+      rdfs:range :City .
+
+:major
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Person ;
+      rdfs:label "학과"^^xsd:string .
+
+:sex  rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Person ;
+      rdfs:label "성별"^^xsd:string ;
+      rdfs:range xsd:string .
+
+:take
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :Student ;
+      rdfs:label "수강"^^xsd:string ;
+      rdfs:range :Course .
+
+:teacher
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :Course ;
+      rdfs:label "담당교수"^^xsd:string ;
+      rdfs:range :Professor .

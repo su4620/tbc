@@ -1,0 +1,230 @@
+# baseURI: http://joyhong.tistory.com/example/
+
+@prefix : <http://joyhong.tistory.com/example/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:
+  a owl:Ontology ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+:City
+  a owl:Class ;
+  rdfs:label "도시" ;
+  rdfs:subClassOf owl:Thing ;
+.
+:Course
+  a owl:Class ;
+  rdfs:label "수업" ;
+  rdfs:subClassOf owl:Thing ;
+.
+:Person
+  a owl:Class ;
+  rdfs:label "사람" ;
+  rdfs:subClassOf owl:Thing ;
+.
+:Professor
+  a owl:Class ;
+  rdfs:label "교수" ;
+  rdfs:subClassOf :Person ;
+.
+:Student
+  a owl:Class ;
+  rdfs:label "학생" ;
+  rdfs:subClassOf :Person ;
+.
+:birthYear
+  a owl:DatatypeProperty ;
+  rdfs:domain :Person ;
+  rdfs:label "출생연도" ;
+  rdfs:range xsd:integer ;
+.
+:credit
+  a owl:DatatypeProperty ;
+  rdfs:domain :Course ;
+  rdfs:label "학점" ;
+  rdfs:range xsd:integer ;
+.
+:hobby
+  a owl:DatatypeProperty ;
+  rdfs:domain :Person ;
+  rdfs:label "취미" ;
+  rdfs:range xsd:string ;
+.
+:label
+  a owl:DatatypeProperty ;
+  rdfs:domain :Student ;
+  rdfs:range xsd:string ;
+.
+:liveIn
+  a owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:label "사는 곳" ;
+  rdfs:range :City ;
+.
+:major
+  a owl:DatatypeProperty ;
+  rdfs:domain :Person ;
+  rdfs:label "학과" ;
+.
+:sex
+  a owl:DatatypeProperty ;
+  rdfs:domain :Person ;
+  rdfs:label "성별" ;
+  rdfs:range xsd:string ;
+.
+:take
+  a owl:ObjectProperty ;
+  rdfs:domain :Student ;
+  rdfs:label "수강" ;
+  rdfs:range :Course ;
+.
+:teacher
+  a owl:ObjectProperty ;
+  rdfs:domain :Course ;
+  rdfs:label "담당교수" ;
+  rdfs:range :Professor ;
+.
+:광주
+  a :City ;
+.
+:국문학의이해
+  a :Course ;
+  :credit 3 ;
+  :label "국문학의 이해" ;
+  :teacher :국어만 ;
+.
+:국어만
+  a :Professor ;
+  :label "국어만" ;
+  :sex "여" ;
+.
+:나철학
+  a :Professor ;
+  :label "나철학" ;
+  :sex "남" ;
+.
+:대구
+  a :City ;
+.
+:대전
+  a :City ;
+.
+:데이터베이스
+  a :Course ;
+  :credit 3 ;
+  :label "데이터베이스" ;
+  :teacher :오라클 ;
+.
+:막굴려
+  a :Professor ;
+  :label "막굴려" ;
+  :sex "남" ;
+.
+:부산
+  a :City ;
+.
+:생활볼링
+  a :Course ;
+  :credit 1 ;
+  :label "생활볼링" ;
+  :teacher :막굴려 ;
+.
+:서울
+  a :City ;
+.
+:수지_3
+  a :Student ;
+  :birthYear 2002 ;
+  :hobby "스케이팅" ;
+  :label "수지" ;
+  :liveIn :대전 ;
+  :major "미술교육학과" ;
+  :sex "여" ;
+  :take :국문학의이해 ;
+  :take :데이터베이스 ;
+.
+:신민아_6
+  a :Student ;
+  :birthYear 2001 ;
+  :hobby "독서" ;
+  :label "신민아" ;
+  :liveIn :광주 ;
+  :major "컴퓨터공학과" ;
+  :sex "여" ;
+  :take :생활볼링 ;
+.
+:아이유_2
+  a :Student ;
+  :birthYear 2000 ;
+  :hobby "노래" ;
+  :label "아이유" ;
+  :liveIn :서울 ;
+  :major "수학과" ;
+  :sex "여" ;
+  :take :국문학의이해 ;
+  :take :데이터베이스 ;
+  :take :생활볼링 ;
+  :take :철학개론 ;
+.
+:아이유_7
+  a :Student ;
+  :birthYear 1995 ;
+  :hobby "서핑" ;
+  :label "아이유" ;
+  :liveIn :제주 ;
+  :major "생활체육학과" ;
+  :sex "여" ;
+  :take :국문학의이해 ;
+  :take :생활볼링 ;
+.
+:오라클
+  a :Professor ;
+  :label "오라클" ;
+  :sex "여" ;
+.
+:이승기_4
+  a :Student ;
+  :birthYear 1999 ;
+  :hobby "암벽등반" ;
+  :label "이승기" ;
+  :liveIn :대구 ;
+  :major "문헌정보학과" ;
+  :sex "남" ;
+  :take :데이터베이스 ;
+  :take :생활볼링 ;
+.
+:이정재_5
+  a :Student ;
+  :birthYear 1995 ;
+  :hobby "사격" ;
+  :label "이정재" ;
+  :liveIn :부산 ;
+  :major "국어국문학과" ;
+  :sex "남" ;
+  :take :국문학의이해 ;
+.
+:제주
+  a :City ;
+.
+:철학개론
+  a :Course ;
+  :credit 2 ;
+  :label "철학개론" ;
+  :teacher :나철학 ;
+.
+:홍길동_1
+  a :Student ;
+  :birthYear 2000 ;
+  :hobby "자전거" ;
+  :label "홍길동" ;
+  :liveIn :서울 ;
+  :major "컴퓨터공학과" ;
+  :sex "남" ;
+  :take :국문학의이해 ;
+  :take :데이터베이스 ;
+  :take :생활볼링 ;
+  :take :철학개론 ;
+.

@@ -1,0 +1,3 @@
+﻿subject	name	age	friend	etc
+jay	jay	23	richard	xx
+tom	tom	25	carol	yy

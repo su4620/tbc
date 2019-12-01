@@ -1,0 +1,7 @@
+SELECT ?s ?label
+WHERE {
+	?s a ?type .
+	?s rdfs:domain bf:Work .
+	?s rdfs:label ?label . 
+	filter(?type=owl:ObjectProperty || ?type=owl:DatatypeProperty)
+}

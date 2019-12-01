@@ -1,0 +1,20 @@
+SELECT ?ins (sample(?label) as ?a) (sample(?extent) as ?e)
+(sample(?mainTitle) as ?m) (sample(?subTitle) as ?s) 
+(group_concat(?id; separator=" | ") as ?i)
+(sample(?provActAgent) as ?ag) (sample(?provActPlace) as ?pla)
+WHERE {
+	<http://id.loc.gov/resources/works/14169048> bf:hasInstance ?ins.
+	?ins rdfs:label ?label .
+	?ins bf:extent ?ext . 
+	?ext rdfs:label ?extent.
+	?ins bf:title ?tit .
+	?tit bf:mainTitle ?mainTitle .
+	?tit bf:subtitle ?subTitle .
+	?ins bf:identifiedBy ?iden .
+	?iden rdf:value ?id .
+	?ins bf:provisionActivity ?pact.
+	?pact bf:agent ?pactagent.
+	?pactagent rdfs:label ?provActAgent.
+	?pact bf:place ?pactplace.
+	?pactplace rdfs:label ?provActPlace.
+} group by ?ins

@@ -1,0 +1,212 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/11655574" xmlns:bf="http://id.loc.gov/ontologies/bibframe/">
+    <bflc:aap xmlns:bflc="http://id.loc.gov/ontologies/bflc/">Bornet, Fred, Christmas story</bflc:aap>
+    <bflc:aap-normalized xmlns:bflc="http://id.loc.gov/ontologies/bflc/">bornetfredchristmasstory</bflc:aap-normalized>
+    <bflc:aapVariant xmlns:bflc="http://id.loc.gov/ontologies/bflc/">Leigh, Courtney, Christmas story</bflc:aapVariant>
+    <bflc:aapVariant-normalized xmlns:bflc="http://id.loc.gov/ontologies/bflc/">leighcourtneychristmasstory</bflc:aapVariant-normalized>
+    <bflc:aapVariant xmlns:bflc="http://id.loc.gov/ontologies/bflc/">Television Highlights Production. Christmas story</bflc:aapVariant>
+    <bflc:aapVariant-normalized xmlns:bflc="http://id.loc.gov/ontologies/bflc/">televisionhighlightsproductionchristmasstory</bflc:aapVariant-normalized>
+    <bflc:aapVariant xmlns:bflc="http://id.loc.gov/ontologies/bflc/">Zouary (Maurice) Collection (Library of Congress) Christmas story</bflc:aapVariant>
+    <bflc:aapVariant-normalized xmlns:bflc="http://id.loc.gov/ontologies/bflc/">zouary(maurice)collection(libraryofcongress)christmasstory</bflc:aapVariant-normalized>
+    <bf:adminMetadata>
+                <bf:AdminMetadata>
+                  <bf:generationProcess>
+                    <bf:GenerationProcess>
+                      <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">DLC marc2bibframe2 v1.5.0-SNAPSHOT: 2019-06-13T13:19:48-04:00</rdfs:label>
+                    </bf:GenerationProcess>
+                  </bf:generationProcess>
+                  <bf:status>
+                    <bf:Status>
+                      <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">new</rdfs:label>
+                      <bf:code>n</bf:code>
+                    </bf:Status>
+                  </bf:status>
+                  <bflc:encodingLevel xmlns:bflc="http://id.loc.gov/ontologies/bflc/">
+                    <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
+                      <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">minimal</rdfs:label>
+                    </bflc:EncodingLevel>
+                  </bflc:encodingLevel>
+                  <bf:descriptionConventions>
+                    <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/aacr">
+                      <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">aacr</rdfs:label>
+                    </bf:DescriptionConventions>
+                  </bf:descriptionConventions>
+                  <bf:identifiedBy>
+                    <bf:Local>
+                      <rdf:value>11655574</rdf:value>
+                      <bf:assigner>
+                        <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+                      </bf:assigner>
+                    </bf:Local>
+                  </bf:identifiedBy>
+                  <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-06-11T10:35:53</bf:changeDate>
+                  <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-09-27</bf:creationDate>
+                  <bf:source>
+                    <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+                      <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+                      <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">DLC</rdfs:label>
+                    </bf:Source>
+                  </bf:source>
+                  <bf:source>
+                    <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+                      <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+                      <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">DLC</rdfs:label>
+                    </bf:Source>
+                  </bf:source>
+                  <bf:descriptionModifier>
+                    <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+                      <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">DLC</rdfs:label>
+                    </bf:Agent>
+                  </bf:descriptionModifier>
+                  <bf:descriptionConventions>
+                    <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/amim">
+                      <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">amim</rdfs:label>
+                    </bf:DescriptionConventions>
+                  </bf:descriptionConventions>
+                </bf:AdminMetadata>
+              </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/StillImage"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/MovingImage"/>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026406">
+	<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Motion pictures</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:colorContent>
+                <bf:ColorContent rdf:about="http://id.loc.gov/vocabulary/mcolor/blw">
+                  <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">black and white</rdfs:label>
+                </bf:ColorContent>
+              </bf:colorContent>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/MovingImage"/>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026406">
+	<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Motion pictures</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:colorContent>
+                <bf:ColorContent rdf:about="http://id.loc.gov/vocabulary/mcolor/blw">
+                  <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">black and white</rdfs:label>
+                </bf:ColorContent>
+              </bf:colorContent>
+    <bf:language>
+                <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">English</rdfs:label>
+      </bf:Language>
+              </bf:language>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026406">
+	<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">motion pictures</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">10</bf:duration>
+    <bf:identifiedBy>
+                <bf:Lccn>
+                  <rdf:value>   95514525 </rdf:value>
+                </bf:Lccn>
+              </bf:identifiedBy>
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">The Christmas story</rdfs:label>
+    <bf:title>
+      <bf:Title>
+	<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Christmas story</rdfs:label>
+	<bf:mainTitle>The Christmas story</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:genreForm>
+      <bf:GenreForm>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Television.</madsrdf:authoritativeLabel>
+	<bf:source>
+                    <bf:Source>
+                      <bf:code>mim</bf:code>
+                    </bf:Source>
+                  </bf:source>
+	<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Television.</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Specials.</madsrdf:authoritativeLabel>
+	<bf:source>
+                    <bf:Source>
+                      <bf:code>mim</bf:code>
+                    </bf:Source>
+                  </bf:source>
+	<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Specials.</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n97846411">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Bornet, Fred,</rdfs:label>
+	    <madsrdf:isIdentifiedByAuthority rdf:resource="http://id.loc.gov/authorities/names/n97846411" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"/>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role>
+	    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">direction</rdfs:label>
+	  </bf:Role>
+	</bf:role>
+	<bf:role>
+	  <bf:Role>
+	    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">camera.</rdfs:label>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent>
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Leigh, Courtney,</rdfs:label>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role>
+	    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">writing.</rdfs:label>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent>
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Television Highlights Production.</rdfs:label>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+	    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Contributor</rdfs:label>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n93073412">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Zouary (Maurice) Collection (Library of Congress)</rdfs:label>
+	    <madsrdf:isIdentifiedByAuthority rdf:resource="http://id.loc.gov/authorities/names/n93073412" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"/>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+	    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Contributor</rdfs:label>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works" xmlns:dcterms="http://purl.org/dc/terms/"/>
+    <bf:hasInstance>
+      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11655574">
+	<bflc:aap xmlns:bflc="http://id.loc.gov/ontologies/bflc/">The Christmas story</bflc:aap>
+      </bf:Instance>
+    </bf:hasInstance>
+  </bf:Work>
+</rdf:RDF>

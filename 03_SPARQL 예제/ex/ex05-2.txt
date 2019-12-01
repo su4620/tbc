@@ -1,0 +1,6 @@
+SELECT *
+WHERE {
+	?s a bf:Work .
+	?s bf:hasInstance ?instance .
+	optional {?instance bf:credits ?o . }
+}

@@ -1,0 +1,14 @@
+SELECT *
+WHERE {
+	{
+	?s a owl:ObjectProperty .
+	?s rdfs:domain bf:Work .
+	?s rdfs:label ?label . 
+	}
+	UNION
+	{
+	?s a owl:DatatypeProperty .
+	?s rdfs:domain bf:Work .
+	?s rdfs:label ?label . 
+	}
+}

@@ -1,0 +1,7 @@
+SELECT ?s ?mTitle
+WHERE {
+	?s a bf:Work .
+	?s bf:title ?title.
+	?title bf:mainTitle ?mTitle.
+	filter(regex(?mTitle, 'love'))
+}

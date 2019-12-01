@@ -1,0 +1,8 @@
+SELECT ?s ?label ?tag
+WHERE {
+	?s a ?type .
+	?s rdfs:domain bf:Work .
+	?s rdfs:label ?label . 
+	filter(?type=owl:ObjectProperty || ?type=owl:DatatypeProperty)
+	bind(if(?type=owl:ObjectProperty,  '오브젝트', '데이터타입') as ?tag )
+}

@@ -1,0 +1,8 @@
+SELECT *
+WHERE {
+	<http://id.loc.gov/resources/instances/14169048> bf:hasItem ?item.
+	?item bf:shelfMark ?mark.
+	?mark bf:source ?src.
+	?src rdfs:label ?source.
+	?mark rdfs:label ?label.
+}

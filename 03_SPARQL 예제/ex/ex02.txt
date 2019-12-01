@@ -1,0 +1,5 @@
+SELECT *
+WHERE {
+	?s a bf:Work .
+	?s ?p ?o .
+}

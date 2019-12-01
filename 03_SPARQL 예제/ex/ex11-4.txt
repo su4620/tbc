@@ -1,0 +1,11 @@
+SELECT ?s ?mTitle ?aLabel ?rLabel
+WHERE {
+	?s a bf:Work.
+	?s bf:title ?title.
+	?title bf:mainTitle ?mTitle.
+	?s bf:contribution ?con.
+	?con bf:agent ?agnt.
+	?agnt rdfs:label ?aLabel.
+	?con bf:role ?role.
+	?role rdfs:label ?rLabel.
+}

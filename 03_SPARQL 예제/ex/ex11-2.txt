@@ -1,0 +1,7 @@
+SELECT *
+WHERE {
+	?s a bf:Instance .
+	?s bf:identifiedBy ?idby.
+	?idby a bf:Isbn .
+	?idby rdf:value ?isbn .
+}
